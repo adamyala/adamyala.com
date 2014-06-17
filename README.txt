@@ -1,4 +1,4 @@
-Below is the the README for the HTML5 site I blatantly hacked up:
+Below is the the README for the HTML5 site I blatantly hacked up and now use as my own:
 
 Astral 2.5 by HTML5 UP
 html5up.net | @n33co
